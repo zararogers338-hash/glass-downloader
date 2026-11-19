@@ -195,6 +195,7 @@ class Queue:
             cmd=[executable("BBDown") or "BBDown",j["url"],"--work-dir",dest,"--select-page",part,
                  "--file-pattern","<bvid>-P<pNumber>","--multi-file-pattern","<bvid>-P<pNumber>",
                  "--force-replace-host","false","--skip-cover","--skip-subtitle"]
+            if ffmpeg:=executable("ffmpeg"):cmd+=["--ffmpeg-path",ffmpeg]
             if net.get("download_kib"):
                 if not executable("aria2c"):raise ValueError("BBDown 限速需要 aria2c")
                 cmd+=["--use-aria2c","--aria2c-path",executable("aria2c"),"--aria2c-args","--max-download-limit="+str(net["download_kib"])+"K"]
@@ -202,6 +203,7 @@ class Queue:
             proxy="http://127.0.0.1:"+str(net["mihomo_port"]) if j["route"]=="mihomo" else ""
             cmd=yt_command()+["--ignore-config","--no-playlist","--windows-filenames","--no-progress","--proxy",proxy,
                  "--retries",str(net.get("retries",2)),"--paths",dest,"-o","%(title).120B [%(id)s].%(ext)s"]
+            if ffmpeg:=executable("ffmpeg"):cmd+=["--ffmpeg-location",str(Path(ffmpeg).parent)]
             if j["channel"]=="bilibili":cmd+=["--http-chunk-size","4M"]
             if net.get("download_kib"):cmd+=["--limit-rate",str(net["download_kib"])+"K"]
         if j["channel"]=="bilibili":cmd+=media_args(j.get("media",{"mode":"video","quality":"auto"}),engine)

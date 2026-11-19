@@ -8,7 +8,13 @@
 
 ## 快速开始
 
-Windows 需要 **Python 3.11 或更高版本、Node.js 22.12 或更高版本及 npm**。首次启动需要联网安装依赖。
+**Windows 10/11 x64**：[下载泊岸单文件版（.exe）](https://github.com/zararogers338-hash/glass-downloader/releases/download/v0.1.1/GlassDownloader-0.1.1-windows-x64.exe)，保存到任意目录后双击打开。EXE 内含下载服务、Python 运行时、Svelte 界面、Tauri 桌面窗口、yt-dlp 和原版 12 张场景壁纸；窗口使用系统的 [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/)。同一发布页提供 SHA-256 和第三方许可清单。
+
+单文件版的任务和设置保存在 `%LOCALAPPDATA%\GlassDownloader`。重复双击会唤起工作台；关闭窗口后，有任务时继续传输，队列空闲后自动退出。FFmpeg（音视频合并）、aria2、BBDown 为可选外部工具。可将可执行文件放进 PATH，或放入 `%LOCALAPPDATA%\GlassDownloader\components`；使用 FFmpeg 时将 ffmpeg.exe 和 ffprobe.exe 放在一起。
+
+### 从源码运行
+
+Windows 源码版需要 **Python 3.11 或更高版本、Node.js 22.12 或更高版本及 npm**。首次启动需要联网安装依赖。
 
 ```powershell
 git clone https://github.com/zararogers338-hash/glass-downloader.git

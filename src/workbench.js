@@ -72,7 +72,7 @@ export function connect(update,status){
  if(demo){
    const conf=load('boan-preview-settings',defaultSettings);
    update({jobs:makeSample(),system:{cpu:24,memory:46,disk_write:46.2*MiB,disk_free:284*1024*MiB,gpu:null},
-     output:'~/Downloads/GlassDownloader',settings:{...defaultSettings,...conf},components:{http:true,httpx:true,curl:true,aria2:true,'yt-dlp':true,BBDown:true,ffmpeg:true},version:'0.1.0'});
+     output:'~/Downloads/GlassDownloader',settings:{...defaultSettings,...conf},components:{http:true,httpx:true,curl:true,aria2:true,'yt-dlp':true,BBDown:true,ffmpeg:true},version:'0.1.1'});
    status('演示模式');return ()=>{};
  }
  token=tokenFromWindow();

@@ -1,6 +1,6 @@
 """Common streaming replies for the HTTP file scheduler. Redirects are handled above this layer."""
 import asyncio
-import shutil
+from .catalog import executable
 from contextlib import asynccontextmanager
 from dataclasses import dataclass
 from multidict import CIMultiDict
@@ -53,7 +53,7 @@ async def file_transport(engine,route,settings):
                     raise aiohttp.ClientConnectionError(f"HTTPX 连接中断：{type(e).__name__}") from e
             yield get
     elif engine=="curl":
-        binary=shutil.which("curl")
+        binary=executable("curl")
         if not binary:raise ValueError("未安装 cURL")
         proxy={"direct":"","mihomo":f"http://127.0.0.1:{settings['mihomo_port']}","tor":f"socks5h://127.0.0.1:{settings['tor_port']}"}[route]
         @asynccontextmanager

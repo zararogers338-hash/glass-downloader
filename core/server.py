@@ -6,13 +6,14 @@ import secrets
 import time
 from pathlib import Path
 import psutil
+from . import __version__
 from aiohttp import web, WSMsgType
 from .catalog import ROOT, CHANNELS, components, make_plan
 from .queue import Queue
 from .resolver import ChooseRepo, resolve_input
 from .bili_media import inspect_formats
 
-def create_app(home, output, port):
+def create_app(home, output, port, desktop=None):
     home.mkdir(exist_ok=True,parents=True)
     token_path=home/"api-token"
     if not token_path.exists():
@@ -60,7 +61,7 @@ def create_app(home, output, port):
                 await asyncio.gather(*(deliver(ws) for ws in list(sockets)))
     def snapshot():
         return {"jobs":list(reversed(queue.jobs.values())),"system":host_stats,
-                "settings":queue.settings,"output":queue.settings["download_dir"],"components":inventory,"version":"0.1.0"}
+                "settings":queue.settings,"output":queue.settings["download_dir"],"components":inventory,"version":__version__}
     inventory=components()
     resolving={}
     submissions={}
@@ -92,7 +93,7 @@ def create_app(home, output, port):
         if not re.fullmatch("[a-f0-9]{64}",challenge):
             raise ValueError("Invalid instance challenge")
         proof=hmac.digest(token.encode(),"instance:".encode()+challenge.encode(),"sha256").hex()
-        return web.json_response({"proof":proof},headers={"Cache-Control":"no-store"})
+        return web.json_response({"proof":proof,"desktop":desktop is not None},headers={"Cache-Control":"no-store"})
     async def config(req):return web.json_response({"channels":list(CHANNELS.values()),"token_file":str(token_path)})
     async def state(req):return web.json_response(snapshot())
     async def jobs(req):return web.json_response(list(reversed(queue.jobs.values())))
@@ -178,5 +179,11 @@ def create_app(home, output, port):
         web.post("/api/v1/jobs/{id}/{action:pause|resume|cancel|remove|delete}",action),web.post("/api/v1/jobs/{id}/folder",reveal),web.patch("/api/v1/settings",settings),
         web.post("/api/v1/submissions/{op:[a-f0-9-]+}/stop",stop_submission),
         web.post("/api/v1/components/rescan",rescan)])
+    if desktop:
+        desktop.has_work=lambda: bool(resolving) or any(not task.done() for task in queue.work.values())
+        async def activate(req):
+            desktop.activate()
+            return web.json_response({"ok":True})
+        app.router.add_post("/api/v1/desktop/activate",activate)
     return app,token
 

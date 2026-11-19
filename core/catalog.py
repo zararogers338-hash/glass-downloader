@@ -2,6 +2,7 @@ import json
 import importlib.util
 import os
 import shutil
+import sys
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
@@ -18,7 +19,9 @@ def engines_for(channel):
 
 
 def executable(name):
-    private=ROOT/".components"/(name+(".exe" if os.name=="nt" else ""))
+    folder=(Path(os.environ["LOCALAPPDATA"])/"GlassDownloader"/"components"
+            if getattr(sys,"frozen",False) and os.name=="nt" else ROOT/".components")
+    private=folder/(name+(".exe" if os.name=="nt" else ""))
     return str(private) if private.is_file() else shutil.which(name)
 
 

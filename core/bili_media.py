@@ -12,6 +12,8 @@ from .processes import owned_process
 
 
 def yt_command():
+    if getattr(sys,"frozen",False):
+        return [sys.executable,"--yt-worker"]
     binary=shutil.which("yt-dlp")
     return [binary] if binary else [sys.executable,"-m","yt_dlp"]
 
