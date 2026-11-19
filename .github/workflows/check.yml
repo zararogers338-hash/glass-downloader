@@ -1,0 +1,34 @@
+name: Checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  workbench:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m venv .venv
+          .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+          npm ci
+      - name: Build UI
+        run: npm run build
+      - name: Check inputs and transfers
+        shell: pwsh
+        run: |
+          .\.venv\Scripts\python.exe tools/check_inputs.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          .\.venv\Scripts\python.exe tools/check_interrupts.py
+      - name: Exercise desktop workbench in Edge
+        run: node tools/check-workbench.mjs
+

@@ -1,0 +1,20 @@
+{
+  "id": "java-library-cup",
+  "version": 1,
+  "channel": "java",
+  "title": "杯沿的热气",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "72c9579269152f1561afbc21d7ba9a9a49206f3c27285a5f571eeff5712017ae"
+  },
+  "production": "AI illustration, user-supplied 6x upscale"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "c-books-desktop",
+  "version": 1,
+  "channel": "cpp",
+  "title": "指向何处",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "1fddb73b0ecedefc4501a86cc97d8ccbdd9c7a29fa9171690ce5bc74ee8a5a1e"
+  },
+  "production": "AI illustration, user-supplied 6x upscale"
+}

@@ -1,0 +1,122 @@
+{
+  "hf-station-day": {
+    "seed": "#cb7e69",
+    "accent": "#ffbcab",
+    "onAccent": "#40170c",
+    "surface": "#291a16",
+    "panel": "#392520",
+    "line": "#5d4640",
+    "muted": "#d4b5ad",
+    "ink": "#fff1ed"
+  },
+  "modelscope-station-night": {
+    "seed": "#7272a0",
+    "accent": "#c8c7ff",
+    "onAccent": "#1f1f45",
+    "surface": "#1d1d27",
+    "panel": "#292936",
+    "line": "#4b4a58",
+    "muted": "#bcbacb",
+    "ink": "#f5f2fd"
+  },
+  "bilibili-summer-deck": {
+    "seed": "#309ce0",
+    "accent": "#9dd2ff",
+    "onAccent": "#00263d",
+    "surface": "#171e26",
+    "panel": "#212b34",
+    "line": "#424d57",
+    "muted": "#b2bdc9",
+    "ink": "#eff4fc"
+  },
+  "github-octocat-ubuntu-silhouette": {
+    "seed": "#415ea9",
+    "accent": "#bbcbff",
+    "onAccent": "#142245",
+    "surface": "#1a1d27",
+    "panel": "#262a36",
+    "line": "#474b58",
+    "muted": "#b8bbcb",
+    "ink": "#f3f3fd"
+  },
+  "arxiv-tea-print": {
+    "seed": "#316b6a",
+    "accent": "#54e0de",
+    "onAccent": "#002928",
+    "surface": "#13201f",
+    "panel": "#1c2d2c",
+    "line": "#3e4f4e",
+    "muted": "#adbfbe",
+    "ink": "#ebf6f5"
+  },
+  "magnet-seed-workshop": {
+    "seed": "#335d66",
+    "accent": "#59ddf6",
+    "onAccent": "#00282f",
+    "surface": "#131f22",
+    "panel": "#1d2c30",
+    "line": "#3e4e52",
+    "muted": "#aebec3",
+    "ink": "#ecf5f8"
+  },
+  "tor-onion-tomato-kitchen": {
+    "seed": "#e95f31",
+    "accent": "#ffbda8",
+    "onAccent": "#3f180b",
+    "surface": "#291a15",
+    "panel": "#39251f",
+    "line": "#5d463f",
+    "muted": "#d4b5ac",
+    "ink": "#fff1ed"
+  },
+  "video-first-frame": {
+    "seed": "#1e344c",
+    "accent": "#a9cfff",
+    "onAccent": "#012543",
+    "surface": "#181e26",
+    "panel": "#222b35",
+    "line": "#444c57",
+    "muted": "#b4bcca",
+    "ink": "#f0f4fc"
+  },
+  "python-winter-parcel": {
+    "seed": "#304c58",
+    "accent": "#76d8ff",
+    "onAccent": "#002734",
+    "surface": "#141f24",
+    "panel": "#1e2c32",
+    "line": "#404d54",
+    "muted": "#afbec6",
+    "ink": "#edf5fa"
+  },
+  "java-library-cup": {
+    "seed": "#316b6a",
+    "accent": "#54e0de",
+    "onAccent": "#002928",
+    "surface": "#13201f",
+    "panel": "#1c2d2c",
+    "line": "#3e4f4e",
+    "muted": "#adbfbe",
+    "ink": "#ebf6f5"
+  },
+  "c-books-desktop": {
+    "seed": "#254356",
+    "accent": "#93d4ff",
+    "onAccent": "#00273a",
+    "surface": "#161f25",
+    "panel": "#202b34",
+    "line": "#414d56",
+    "muted": "#b1bdc8",
+    "ink": "#eef4fb"
+  },
+  "linux-ice-shelf": {
+    "seed": "#356a7d",
+    "accent": "#6fd9ff",
+    "onAccent": "#002833",
+    "surface": "#141f24",
+    "panel": "#1e2c32",
+    "line": "#3f4e54",
+    "muted": "#afbec5",
+    "ink": "#edf5f9"
+  }
+}

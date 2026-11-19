@@ -1,0 +1,17 @@
+{
+  "productName": "Glass Downloader",
+  "version": "0.1.0",
+  "identifier": "org.glassdownloader.desktop",
+  "build": {
+    "frontendDist": "assets"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": "default-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": false
+  }
+}

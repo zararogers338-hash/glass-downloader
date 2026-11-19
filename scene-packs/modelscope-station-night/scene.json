@@ -1,0 +1,54 @@
+{
+  "id": "modelscope-station-night",
+  "version": 1,
+  "channel": "modelscope",
+  "variant": "night",
+  "title": "晚班车到站前",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "f1fa34696feefeefcc8da04e68ae15e1558f86b024ca689973bcab1336e7e6ad"
+  },
+  "credits": [
+    {
+      "character": "hunyuan",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/hunyuan.html"
+    },
+    {
+      "character": "mimo",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/mimo.html"
+    },
+    {
+      "character": "kimi",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/kimi.html"
+    },
+    {
+      "character": "doubao",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/doubao.html"
+    },
+    {
+      "character": "qwen",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/qwen.html"
+    },
+    {
+      "character": "glm",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/glm.html"
+    },
+    {
+      "character": "deepseek",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/deepseek.html"
+    },
+    {
+      "character": "minimax",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/minimax.html"
+    }
+  ]
+}

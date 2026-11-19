@@ -1,0 +1,28 @@
+{
+  "id": "tor-onion-tomato-kitchen",
+  "version": 1,
+  "channel": "tor",
+  "variant": "dusk",
+  "title": "洋葱与番茄：互联网的另一面",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "6a0b1e5d98c49af3570d15a3a39d65d54c5da8ee2cef9439b964d7ff5f89f80a"
+  },
+  "credits": [
+    {
+      "character": "Clash cat",
+      "source": "https://github.com/flathub/io.github.Fndroid.clash_for_windows/blob/master/io.github.Fndroid.clash_for_windows.png",
+      "role": "character reference"
+    }
+  ],
+  "production": "AI illustration, user-supplied 6x upscale"
+}

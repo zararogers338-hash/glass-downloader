@@ -1,0 +1,127 @@
+[
+  {
+    "id": "general",
+    "name": "通用下载",
+    "tag": "HTTP / HTTPS",
+    "scene": "hf-station-day",
+    "hint": "直链文件",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "tag": "MODEL HUB",
+    "scene": "hf-station-day",
+    "hint": "模型文件链接",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "modelscope",
+    "name": "魔搭",
+    "tag": "MODELSCOPE",
+    "scene": "modelscope-station-night",
+    "hint": "模型文件链接",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "bilibili",
+    "name": "哔哩哔哩",
+    "tag": "BILIBILI",
+    "scene": "bilibili-summer-deck",
+    "hint": "视频页面链接",
+    "engine": "yt-dlp",
+    "route": "direct"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "tag": "RELEASES",
+    "scene": "github-octocat-ubuntu-silhouette",
+    "hint": "Release 资产或文件链接",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "arxiv",
+    "name": "arXiv",
+    "tag": "PAPERS",
+    "scene": "arxiv-tea-print",
+    "hint": "论文摘要或 PDF 链接",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "magnet",
+    "name": "磁力下载",
+    "tag": "BITTORRENT",
+    "scene": "magnet-seed-workshop",
+    "hint": "磁力链接",
+    "engine": "aria2",
+    "route": "direct"
+  },
+  {
+    "id": "tor",
+    "name": "洋葱网络",
+    "tag": "TOR",
+    "scene": "tor-onion-tomato-kitchen",
+    "hint": "HTTP(S) 或洋葱站点文件",
+    "engine": "http",
+    "route": "tor"
+  },
+  {
+    "id": "video",
+    "name": "视频下载",
+    "tag": "VIDEO",
+    "scene": "video-first-frame",
+    "hint": "视频页面链接",
+    "engine": "yt-dlp",
+    "route": "direct"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "tag": "PACKAGES",
+    "scene": "python-winter-parcel",
+    "hint": "安装包或 wheel 直链",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "tag": "JDK",
+    "scene": "java-library-cup",
+    "hint": "JDK 安装包直链",
+    "engine": "http",
+    "route": "direct",
+    "quick": {
+      "label": "下载 JDK 21 · Windows x64",
+      "url": "https://api.adoptium.net/v3/binary/latest/21/ga/windows/x64/jdk/hotspot/normal/eclipse",
+      "hotspot": [
+        0.609,
+        0.559
+      ]
+    }
+  },
+  {
+    "id": "cpp",
+    "name": "C / C++",
+    "tag": "TOOLCHAINS",
+    "scene": "c-books-desktop",
+    "hint": "工具链压缩包直链",
+    "engine": "http",
+    "route": "direct"
+  },
+  {
+    "id": "linux",
+    "name": "Linux",
+    "tag": "DISTRIBUTIONS",
+    "scene": "linux-ice-shelf",
+    "hint": "发行版 ISO 直链",
+    "engine": "http",
+    "route": "direct"
+  }
+]

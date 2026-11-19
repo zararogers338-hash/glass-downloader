@@ -1,0 +1,79 @@
+[
+  {
+    "id": "http",
+    "name": "内置 HTTP",
+    "kinds": [
+      "files",
+      "tor"
+    ],
+    "routes": [
+      "direct",
+      "mihomo",
+      "tor"
+    ],
+    "summary": "分段下载、强 ETag 续传和逐文件校验。"
+  },
+  {
+    "id": "httpx",
+    "name": "HTTPX · HTTP/2",
+    "kinds": [
+      "files"
+    ],
+    "routes": [
+      "direct",
+      "mihomo"
+    ],
+    "summary": "与服务器协商 HTTP/2，兼容 HTTP/1.1，可下载整仓。"
+  },
+  {
+    "id": "curl",
+    "name": "cURL",
+    "kinds": [
+      "files",
+      "tor"
+    ],
+    "routes": [
+      "direct",
+      "mihomo",
+      "tor"
+    ],
+    "summary": "系统 libcurl 传输，支持分段和 SOCKS5 远端解析。"
+  },
+  {
+    "id": "aria2",
+    "name": "aria2",
+    "kinds": [
+      "files",
+      "magnet"
+    ],
+    "routes": [
+      "direct",
+      "mihomo"
+    ],
+    "summary": "HTTP 文件和磁力任务；BT 频道使用直连。"
+  },
+  {
+    "id": "yt-dlp",
+    "name": "yt-dlp",
+    "kinds": [
+      "video",
+      "bilibili"
+    ],
+    "routes": [
+      "direct",
+      "mihomo"
+    ],
+    "summary": "通用视频解析，调用 ffmpeg 合并独立音视频轨。"
+  },
+  {
+    "id": "BBDown",
+    "name": "BBDown",
+    "kinds": [
+      "bilibili"
+    ],
+    "routes": [
+      "direct"
+    ],
+    "summary": "哔哩哔哩专用解析与合并。本适配器使用直连。"
+  }
+]

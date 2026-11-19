@@ -1,0 +1,28 @@
+{
+  "id": "github-octocat-ubuntu-silhouette",
+  "version": 1,
+  "channel": "github",
+  "variant": "dusk",
+  "title": "发布前的最后一行 · Ubuntu 剪影版",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "9f5128b8e120ed28548fa5b7c5401e9a447638458616140ac20140b76376939b"
+  },
+  "credits": [
+    {
+      "character": "Octocat",
+      "source": "https://octodex.github.com/original/",
+      "role": "character reference"
+    }
+  ],
+  "production": "AI illustration, user-supplied 6x upscale"
+}

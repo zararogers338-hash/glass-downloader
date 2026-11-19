@@ -1,0 +1,20 @@
+{
+  "id": "linux-ice-shelf",
+  "version": 1,
+  "channel": "linux",
+  "title": "冰原来信",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "9a2b944dc70d52241eb959326fdefdfa0fc90d94ae95bb7ab511f9c7c7897086"
+  },
+  "production": "AI illustration, user-supplied 6x upscale"
+}

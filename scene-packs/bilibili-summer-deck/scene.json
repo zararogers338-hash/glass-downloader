@@ -1,0 +1,33 @@
+{
+  "id": "bilibili-summer-deck",
+  "version": 1,
+  "channel": "bilibili",
+  "variant": "day",
+  "title": "晴空下的 2233",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "790ad2ea6d47f1ff021130016af6849586332ab95422ebaf9592ddf95d606e46"
+  },
+  "credits": [
+    {
+      "character": "22",
+      "source": "https://www.bilibili.com/blackboard/era/2233birthday.html",
+      "role": "character and composition reference"
+    },
+    {
+      "character": "33",
+      "source": "https://www.bilibili.com/blackboard/era/2233birthday.html",
+      "role": "character and composition reference"
+    }
+  ],
+  "production": "AI redraw, user-supplied 6x upscale"
+}

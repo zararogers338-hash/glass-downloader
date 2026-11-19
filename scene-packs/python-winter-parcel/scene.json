@@ -1,0 +1,22 @@
+{
+  "id": "python-winter-parcel",
+  "version": 1,
+  "channel": "python",
+  "variant": "winter",
+  "title": "雪夜打包",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "9b35545ef88e96fe49eb6b633d6af7a41d562b432939964356ef3013cc99907b"
+  },
+  "credits": [],
+  "production": "AI illustration, user-supplied 6x upscale"
+}

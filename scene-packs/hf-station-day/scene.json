@@ -1,0 +1,66 @@
+{
+  "id": "hf-station-day",
+  "version": 1,
+  "channel": "huggingface",
+  "variant": "day",
+  "title": "快门响之前",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "5f61cc60884723ba2f020cdb4b1e64ba6ee7c507293846174718ee8c57546817"
+  },
+  "credits": [
+    {
+      "character": "llama",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/llama.html"
+    },
+    {
+      "character": "mistral",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/mistral.html"
+    },
+    {
+      "character": "qwen",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/qwen.html"
+    },
+    {
+      "character": "deepseek",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/deepseek.html"
+    },
+    {
+      "character": "kimi",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/kimi.html"
+    },
+    {
+      "character": "glm",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/glm.html"
+    },
+    {
+      "character": "minimax",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/minimax.html"
+    },
+    {
+      "character": "gpt",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/gpt.html"
+    },
+    {
+      "character": "grok",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/grok.html"
+    },
+    {
+      "character": "gemini",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/gemini.html"
+    },
+    {
+      "character": "claude",
+      "source": "https://xn--pssy23gqgbz2d718b.com/en/characters/claude.html"
+    }
+  ]
+}

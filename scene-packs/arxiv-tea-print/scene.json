@@ -1,0 +1,28 @@
+{
+  "id": "arxiv-tea-print",
+  "version": 1,
+  "channel": "arxiv",
+  "variant": "day",
+  "title": "读到这里",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "fb026aff59e08344b39b16763d824711442ffc662db54ea64bf1253536f4ce8e"
+  },
+  "credits": [
+    {
+      "character": "Clash cat",
+      "source": "https://github.com/flathub/io.github.Fndroid.clash_for_windows/blob/master/io.github.Fndroid.clash_for_windows.png",
+      "role": "character reference"
+    }
+  ],
+  "production": "AI illustration, user-supplied 6x upscale"
+}

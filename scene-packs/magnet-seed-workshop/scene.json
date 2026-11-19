@@ -1,0 +1,28 @@
+{
+  "id": "magnet-seed-workshop",
+  "version": 1,
+  "channel": "magnet",
+  "variant": "day",
+  "title": "第一颗种子",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "4bfe5a0d970ed8c4a4d93e1730654e6ad8b8d67a6bd0c99bb331697fe8f9f024"
+  },
+  "credits": [
+    {
+      "character": "Clash cat",
+      "source": "https://github.com/flathub/io.github.Fndroid.clash_for_windows/blob/master/io.github.Fndroid.clash_for_windows.png",
+      "role": "character reference"
+    }
+  ],
+  "production": "AI illustration, user-supplied 6x upscale"
+}

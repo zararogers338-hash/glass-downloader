@@ -1,0 +1,28 @@
+{
+  "id": "video-first-frame",
+  "version": 1,
+  "channel": "video",
+  "variant": "dusk",
+  "title": "第一帧",
+  "layers": [
+    {
+      "src": "wallpaper.webp",
+      "depth": 0
+    }
+  ],
+  "preview": "preview.webp",
+  "master": {
+    "src": "master.png",
+    "width": 10032,
+    "height": 5646,
+    "sha256": "2f17d2f827bce4e00d3263a822edf61be09b60b46879ed563cea93bda05ebcda"
+  },
+  "credits": [
+    {
+      "character": "Clash cat",
+      "source": "https://github.com/flathub/io.github.Fndroid.clash_for_windows/blob/master/io.github.Fndroid.clash_for_windows.png",
+      "role": "character reference"
+    }
+  ],
+  "production": "AI illustration, user-supplied 6x upscale"
+}
